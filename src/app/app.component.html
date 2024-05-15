@@ -40,7 +40,7 @@
                                 <td class="align-middle text-left">{{item.productName}}</td>
                                 <td class="align-middle text-right">${{item.price}}</td>
                                 <td class="align-middle text-center">
-                                    <a href="#delete" data-bs-toggle="modal" data-title="Delete your product ?">
+                                    <a (click)="removeProduct($index)" data-bs-toggle="modal" data-title="Delete your product ?">
                                         <i class="fa fa-trash"></i>
                                     </a>
                                 </td>

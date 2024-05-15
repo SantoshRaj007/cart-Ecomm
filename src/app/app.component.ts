@@ -29,4 +29,8 @@ export class AppComponent {
     showCart() {
         this.isCartVisiable = !this.isCartVisiable;
     }
+
+    removeProduct(index:number){
+        this.cartItems.splice(index,1)
+    }
 }
